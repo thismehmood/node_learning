@@ -1,0 +1,9 @@
+1) Node.js comes with dozens of build-in modules. These build-in module sometimes referred to as core module, 
+give you access to tools for working with file system.
+
+2) Making Http request,creating web servers and more,Node.js help us to working with.
+
+3) Require: This function is used to load in a module and get access to its contents. Require is a global variable provided to all your
+            Node.js scripts, so you can use it anywhere you like! 
+ 	          
+                 const fs = require('fs');

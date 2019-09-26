@@ -1,0 +1,12 @@
+All the file system operations have synchronous and asynchronous forms
+the syschronous takes the completion callback as its last arguments.
+All the file system operations have synchronous and asynchronous forms
+the syschronous takes the completion callback as its last arguments.
+All the file system operations have synchronous and asynchronous forms
+the syschronous takes the completion callback as its last arguments.
+All the file system operations have synchronous and asynchronous forms
+the syschronous takes the completion callback as its last arguments.
+All the file system operations have synchronous and asynchronous forms
+the syschronous takes the completion callback as its last arguments.
+All the file system operations have synchronous and asynchronous forms
+the syschronous takes the completion callback as its last arguments.

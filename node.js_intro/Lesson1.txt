@@ -1,0 +1,6 @@
+Lesson1:
+        1) The most appropriate way to get started node.js is to explore its module system. Such module system lets you to 
+           load exernal libraries into your application.
+        2)That’ll enable you to take advantage of built-in Node.js modules as well as third-party npm modules. This includes
+           libraries for connecting to database, creating web servers, and more!
+       

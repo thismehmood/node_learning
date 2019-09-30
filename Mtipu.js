@@ -1,9 +1,3 @@
-const chalk = require('chalk');
-
-var Mmsg =  chalk.yellow.bold.inverse('hey love'); 
-console.log(chalk.red('Hello', chalk.underline.bgBlue('world') + '!'));
-
-console.log(Mmsg);
 // const Name = 'mehmood';
 // console.log('Mtipu.js')
 

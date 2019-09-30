@@ -20,3 +20,13 @@ DISK: ${chalk.yellow('70%')}
 console.log(chalk.keyword('orange')('Yay for orange colored text!'));
 console.log(chalk.rgb(123, 45, 67).underline('Underlined reddish color'));
 console.log(chalk.hex('#DEADED').bold('Bold gray!'));
+
+const chalk = require('chalk');
+ 
+const miles = 18;
+const calculateFeet = miles => miles * 5280;
+ 
+console.log(chalk`
+  There are {bold 5280 feet} in a mile.
+  In {bold ${miles} miles}, there are {green.bold ${calculateFeet(miles)} feet}.
+`);

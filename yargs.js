@@ -5,13 +5,14 @@ const yargs = require('yargs')
 // } else {
 //   console.log('Retreat from the xupptumblers!')
 // }
+yargs.version('1.1.0');
 yargs.command({
   command:'add',
   describe:'add new thing into yargs',
   builder:{
     title:{
         describe:'notes here',
-
+        
     }
   },
   handler: function(argv){

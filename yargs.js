@@ -12,7 +12,6 @@ yargs.command({
   builder:{
     title:{
         describe:'notes here',
-        
     }
   },
   handler: function(argv){

@@ -1,31 +1,38 @@
-//const book = require('./parseJSON.js')
-const fs =require('fs');
-const addnote = function(title , body){
-      const notes = loadnotes()
-     console.log(notes);
+const fs = require('fs')
+
+const addNote = function (title, body) {
+  const notes = loadNotes()
+    const duplicatenotes = notes.filter(function(note){
+      return note.title == title;
+    }) 
+    if(duplicatenotes.length == 0){
       notes.push({
           title: title,
-         auther:body
+          body: body
       })
-      saveparse(notes)
+      saveNotes(notes)
+      console.log('New note added!', notes)
     }
-      //console.log(parse);
-    //console.log(addparse);
-
-    const saveparse = function(notes){
-    const dataJson = JSON.stringify(notes)
-    fs.writeFileSync('write.JSON',dataJson)
-    }
-// loadparse read file data and parse in  
-var loadnotes = function(){
-    try{
-        const buffer = fs.readFileSync('write.JSON');
-        const databuffer = buffer.toString();
-         return JSON.parse(databuffer);
-        
-      }
-    catch(err){
-        console.log("something happens wrong");
+      else{
+        console.log("note title taken");
       }
 }
-module.exports = {addnote: addnote};
+
+const saveNotes = function (notes) {
+
+  const dataJSON = JSON.stringify(notes)
+  fs.writeFileSync('notes.json', dataJSON)
+}
+
+const loadNotes = function () {
+  try {
+      const dataBuffer = fs.readFileSync('notes.json')
+      const dataJSON = dataBuffer.toString()
+      return JSON.parse(dataJSON)
+  } catch (e) {
+      return []
+  }
+
+}
+
+module.exports = {addNote: addNote}
